@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pabboju Sukumar Chary | Java Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .section-fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header -->
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-700">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white tracking-wider">PSC</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-300 hover:text-cyan-400 transition duration-300">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-cyan-400 transition duration-300">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:text-cyan-400 transition duration-300">Projects</a>
+                <a href="#education" class="text-gray-300 hover:text-cyan-400 transition duration-300">Education</a>
+                <a href="#contact" class="text-gray-300 hover:text-cyan-400 transition duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <a href="#about" class="block py-2 px-6 text-sm hover:bg-gray-700">About</a>
+            <a href="#skills" class="block py-2 px-6 text-sm hover:bg-gray-700">Skills</a>
+            <a href="#projects" class="block py-2 px-6 text-sm hover:bg-gray-700">Projects</a>
+            <a href="#education" class="block py-2 px-6 text-sm hover:bg-gray-700">Education</a>
+            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24">
+
+        <!-- Hero Section -->
+        <section id="home" class="min-h-[80vh] flex items-center">
+            <div class="flex flex-col-reverse md:flex-row items-center w-full gap-12">
+                <!-- Text Content -->
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight">
+                        Pabboju Sukumar Chary
+                    </h1>
+                    <p class="text-2xl md:text-3xl text-cyan-400 font-semibold mt-4">
+                        Aspiring Java Developer
+                    </p>
+                    <p class="mt-6 max-w-xl mx-auto md:mx-0 text-gray-400 text-lg">
+                        I see coding as more than just syntax — it’s about creating solutions. As an aspiring Java developer, I’m passionate about learning, experimenting, and building applications that make technology useful for people.
+                    </p>
+                    <div class="mt-8 flex justify-center md:justify-start space-x-6">
+                        <a href="https://www.linkedin.com/in/sukumar-chary-6958b1303/" target="_blank" class="text-gray-300 hover:text-cyan-400 transition duration-300 text-3xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Sukumarchary" target="_blank" class="text-gray-300 hover:text-cyan-400 transition duration-300 text-3xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="mt-10">
+                        <a href="#projects" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">
+                            View My Work
+                        </a>
+                        <a href="/assets/Pabboju Sukumar Chary (2).pdf" download="PabbojuSukumarChary-Resume" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block text-lg">
+            Download Resume
+        </a>
+                    </div>
+                </div>
+                <!-- Profile Photo -->
+                <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+                    <div class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-cyan-500/70 shadow-lg shadow-cyan-500/20">
+                        <img src="/assets/WhatsApp Image 2025-06-25 at 10.49.16_afb4ceaa.jpg" alt="Profile Photo of Pabboju Sukumar Chary" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 section-fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">About Me</h2>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    I am an aspiring Java Developer and a Computer Science Engineering student with a solid foundation in Java, SQL, HTML, CSS, and Bootstrap. I am consistent, motivated, and always eager to learn. My strengths include strong problem-solving skills, the ability to work effectively in a team, and adaptability to new technologies. I'm passionate about developing software that makes a difference and I'm actively seeking opportunities to apply my skills in a professional environment.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 section-fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Technical Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-cyan-500/20 hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-java text-5xl text-cyan-400"></i>
+                    <span class="mt-4 font-semibold">Java</span>
+                </div>
+                <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-cyan-500/20 hover:-translate-y-2 transition-all duration-300">
+                    <i class="fas fa-database text-5xl text-cyan-400"></i>
+                    <span class="mt-4 font-semibold">SQL</span>
+                </div>
+                <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-cyan-500/20 hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-html5 text-5xl text-cyan-400"></i>
+                    <span class="mt-4 font-semibold">HTML</span>
+                </div>
+                <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-cyan-500/20 hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-css3-alt text-5xl text-cyan-400"></i>
+                    <span class="mt-4 font-semibold">CSS</span>
+                </div>
+                <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-cyan-500/20 hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-bootstrap text-5xl text-cyan-400"></i>
+                    <span class="mt-4 font-semibold">Bootstrap</span>
+                </div>
+                 <!-- Add more skills as you learn them! -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 section-fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1a202c/76e6d1?text=Project+1" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Project Title 1</h3>
+                        <p class="text-gray-400 mb-4">A brief description of your project. What it does, the technologies used, and your role.</p>
+                        <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1a202c/76e6d1?text=Project+2" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Project Title 2</h3>
+                        <p class="text-gray-400 mb-4">A brief description of your project. What it does, the technologies used, and your role.</p>
+                        <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                     <img src="https://placehold.co/600x400/1a202c/76e6d1?text=Coming+Soon" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">More Projects Coming Soon</h3>
+                        <p class="text-gray-400 mb-4">I am constantly working on new and exciting projects. Check back later for more!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-20 section-fade-in">
+             <h2 class="text-4xl font-bold text-center mb-12 text-white">Education</h2>
+             <div class="bg-gray-800 p-8 rounded-lg shadow-lg max-w-3xl mx-auto">
+                 <div class="flex items-start">
+                     <div class="flex-shrink-0">
+                         <i class="fas fa-university text-3xl text-cyan-400 mt-1"></i>
+                     </div>
+                     <div class="ml-6">
+                         <h3 class="text-2xl font-bold text-white">B.Tech in Computer Science Engineering</h3>
+                         <p class="text-gray-400 font-semibold mt-1">Malla Reddy Institute of Technology, Hyderabad</p>
+                         <p class="text-gray-500 mt-1">2022 - 2026</p>
+                         <p class="text-gray-300 mt-2">JNTUH, CGPA: 7.40 </p>
+                     </div>
+                 </div>
+             </div>
+
+              <!-- Education 2-->
+                
+             <div class="bg-gray-800 p-8 rounded-lg shadow-lg max-w-3xl mx-auto mt-6 ">
+                 <div class="flex items-start">
+                     <div class="flex-shrink-0">
+                         <i class="fas fa-university text-3xl text-cyan-400 mt-1"></i>
+                     </div>
+                     <div class="ml-6">
+                         <h3 class="text-2xl font-bold text-white">Intermediate (Class 12th)</h3>
+                         <p class="text-gray-400 font-semibold mt-1"> Kendriya Vidyalaya No.2 AFA Dundigal, Hyderabad</p>
+                         <p class="text-gray-500 mt-1">2020 - 2022</p>
+                         <p class="text-gray-300 mt-2">CBSE, Percentage: 64.4% </p>
+                     </div>
+                 </div>
+             </div>
+             <!--Education 3 -->
+             <div class="bg-gray-800 p-8 rounded-lg shadow-lg max-w-3xl mx-auto mt-6 ">
+                 <div class="flex items-start">
+                     <div class="flex-shrink-0">
+                         <i class="fas fa-university text-3xl text-cyan-400 mt-1"></i>
+                     </div>
+                     <div class="ml-6">
+                         <h3 class="text-2xl font-bold text-white">Class 10th</h3>
+                         <p class="text-gray-400 font-semibold mt-1"> Kendriya Vidyalaya No.1 AFA Dundigal, Hyderabad</p>
+                         <p class="text-gray-500 mt-1">2019 - 2020</p>
+                         <p class="text-gray-300 mt-2">CBSE, Percentage: 65.2% </p>
+                     </div>
+                 </div>
+             </div>
+
+
+
+
+        </section>
+
+        
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-20 section-fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Certifications</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="/assets/Screenshot 2025-09-07 230133.png" alt="" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Java Programming for Beginners</h3>
+                        <p class="text-gray-400 mb-4">Learned and practiced OOPs, syntax, data types, and core programming concepts through hands
+on exercises.</p>
+                        <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">Link &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="/assets/forage.png" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">GenAI powered Data Analytics Job Simulation</h3>
+                        <p class="text-gray-400 mb-4"> I learned to use AI tools to analyze data, create clear visualizations, and draw meaningful insights.</p>
+                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_p2i3N4k49pTFQQmbs_1753877724180_completion_certificate.pdf" class="text-cyan-400 hover:text-cyan-300 font-semibold">Link &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                     <img src="https://placehold.co/600x400/1a202c/76e6d1?text=Coming+Soon" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">More Certifications Coming Soon</h3>
+                        <p class="text-gray-400 mb-4">I am constantly working on new and exciting Courses. Check back later for more!</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 section-fade-in">
+            <h2 class="text-4xl font-bold text-center mb-4 text-white">Get In Touch</h2>
+            <p class="text-center text-gray-400 max-w-2xl mx-auto mb-12">
+                I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open.
+            </p>
+            <div class="text-center">
+                 <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block text-lg">
+                    Say Hello
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 border-t border-gray-700 mt-20">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+             <div class="mb-4 flex justify-center space-x-6">
+                <a href="https://www.linkedin.com/in/sukumar-chary-6958b1303/" target="_blank" class="text-gray-400 hover:text-cyan-400 transition duration-300 text-2xl">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Sukumarchary" target="_blank" class="text-gray-400 hover:text-cyan-400 transition duration-300 text-2xl">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Pabboju Sukumar Chary. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Section fade-in animation
+        const sections = document.querySelectorAll('.section-fade-in');
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+    </script>
+</body>
+</html>
+
